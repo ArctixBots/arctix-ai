@@ -1,3 +1,13 @@
+/* 
+Made with ❤ By Royce Bob
+22 years old student at Rongo university in 
+Kenya. Learning JavaScript
+
+This project was generated from firebase 9.0 using
+Stackblitz online live server and IDE
+Please leave a star 😉 if you like it.
+*/
+
 // Import stylesheets
 import './style.css';
 // Firebase App (the core Firebase SDK) is always required
