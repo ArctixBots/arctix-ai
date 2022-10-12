@@ -60,3 +60,11 @@ async function main() {
   // const ui = new firebaseui.auth.AuthUI(auth);
 }
 main();
+
+function login(username,password,button){
+  username=getElementById(username);
+  password=getElementById(password);
+  button=getElementById(login);
+  action= button.onclick;
+  if ((username.innerHTML=== $database.username()) && (password.innerHTML=== $database.password)) { action.getElementById(login).render(pages/login.html)};
+}
