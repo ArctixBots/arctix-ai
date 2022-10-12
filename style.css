@@ -26,6 +26,7 @@
   }
   #event-details-container{
     clear: none;
+    font-family: Verdana;
   }
   img{
     width:60%;

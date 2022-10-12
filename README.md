@@ -1,6 +1,6 @@
 # arctix-ai
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/firebase-gtk-web-start)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/arctix-ai?file=index.html)
 #
 ### [preview here](https://arctix-ai.stackblitz.io)
 #
