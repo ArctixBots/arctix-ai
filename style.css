@@ -37,6 +37,7 @@
     margin-left: 20px;
     margin-bottom: 20px;
  }
+ 
 }
 
 hr {
@@ -155,9 +156,6 @@ nav lo {
   display: flex;
   justify-content: space-around;
 }
-.contact .flex-box-info{
-  
-} 
 .contact{
   padding: 2rem;
 }
