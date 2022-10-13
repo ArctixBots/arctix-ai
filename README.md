@@ -3,6 +3,7 @@
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/arctix-ai?file=index.html)
 #
 ### [preview here](https://arctix-ai.stackblitz.io)
+### [preview 2](https://Royce-B.repl.co)
 #
 ### JavaScript web application
 Made with firebase framework and created with stackblitz.
