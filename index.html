@@ -32,8 +32,18 @@
     <p><i class="material-icons">calendar_today</i> October 30</p>
     <p><i class="material-icons">location_city</i> Migori County</p>
     
-    <button class="btn btn-primary" onclick="reserve()">RSVP</button><br> <h5>Words are the fossils of civilization, while language is the bridge of communication</h5>
+    <button class="btn btn-primary" onclick="reserve()">RSVP</button><br> <p id="rsvp"></p><h5>Words are the fossils of civilization, while language is the bridge of communication</h5>
       <button class="btn btn-primary" id="contribute">Press Here To Contribubte</button><br>
+
+      
+
+      <script>
+      function reserve() {
+        document.getElementById("rsvp").innerHTML = "Reservation made";
+      }
+      </script>
+      
+
   </section>
 
   <hr />
@@ -74,13 +84,14 @@
 
 <div class="contact">
 <h4>Contact Us</h4>
-<label id="name">Name :</label>
-<input type="text"></input><br>
-<label id="email">Email :</label>
-<input type="text"></input><br>
-<label id="message">Message :</label>
-<textarea class="flex-box-info" type="text"></textarea>
-<button class="btn" id="submit" onlick="submit()">Submit</button>
+<div class="subscribe-container">
+<form method="POST">
+  <input type="email" name="youremail" placeholder="Email Address" required>
+  <input type="text" name="yourname" placeholder="Your full Name" required>
+  <input type="text" name="message" placeholder="Type your message here" required>
+  <input class="subscribe-button" type="submit" value="Submit">
+</form>
+</div>
 
 </div>
 <div class="wrapper">
