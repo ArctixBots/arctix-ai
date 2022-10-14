@@ -11,7 +11,28 @@ Please leave a star 😉 if you like it.
 // Import stylesheets
 import './style.css';
 // Firebase App (the core Firebase SDK) is always required
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from 'firebase/app'; 
+import { getRemoteConfig } from "firebase/remote-config";
+import { getAnalytics } from "firebase/analytics";
+import { getStorage } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
+
+// Replace with your app's configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
+const firebaseConfig = {
+  apiKey: "AIzaSyBwmJD9EJUd8JwYqN75Zg8JeIM-yDk7Uog",
+  authDomain: "arctix-ai.firebaseapp.com",
+  projectId: "arctix-ai",
+  storageBucket: "arctix-ai.appspot.com",
+  messagingSenderId: "910372299050",
+  appId: "1:910372299050:web:94edbb96b8341865e37e53",
+  measurementId: "G-0RQ20YTTEY"
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// Initialize Remote Config and get a reference to the service
+const remoteConfig = getRemoteConfig(app);
+const analytics = getAnalytics(app);
 
 // Add the Firebase products and methods that you want to use
 import {} from 'firebase/auth';
@@ -57,14 +78,10 @@ async function main() {
     },
   };
 
-  // const ui = new firebaseui.auth.AuthUI(auth);
+  const ui = new firebaseui.auth.AuthUI(auth);
 }
 main();
-
-function login(username,password,button){
-  username=getElementById(username);
-  password=getElementById(password);
-  button=getElementById(login);
-  action= button.onclick;
-  if ((username.innerHTML=== $database.username()) && (password.innerHTML=== $database.password)) { action.getElementById(login).render(pages/login.html)};
-}
+const defaultProject = initializeApp(firebaseConfig);
+console.log(defaultProject.name);  // "[DEFAULT]"
+let defaultStorage = getStorage(defaultProject);
+let defaultFirestore = getFirestore(defaultProject);

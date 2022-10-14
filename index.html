@@ -1,121 +1,109 @@
 <head>
-<meta charset="utf-8" />
-<title>Firebase | Rongo-Uni</title>
-<link
-  type="text/css"
-  rel="stylesheet"
-  href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css"
-/>
-<link
-  href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-/>
-<!-- Font Awesome 5.15.1 CSS -->
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body>
-<div id="app">
-  <img
-    src="https://i.imgur.com/wyMt35B.jpeg">
-   
-</div>
- <section id="event-details-container">
-    <h1>Rongo University</h1>
-    <h2>Material dashboard</h2>
-
-    <p><i class="material-icons">calendar_today</i> October 30</p>
-    <p><i class="material-icons">location_city</i> Migori County</p>
-    
-    <button class="btn btn-primary" onclick="reserve()">RSVP</button><br> <p id="rsvp"></p><h5>Words are the fossils of civilization, while language is the bridge of communication</h5>
-      <button class="btn btn-primary" id="contribute">Press Here To Contribubte</button><br>
-
-      
-
-      <script>
-      function reserve() {
-        document.getElementById("rsvp").innerHTML = "Reservation made";
-      }
-      </script>
-      
-
-  </section>
-
-  <hr />
-
-  <section id="firebaseui-auth-container">
-
-  <section id="description-container">
-    <h2>What we'll be doing</h2>
-    <p>Join us for a day full of Firebase Workshops and Pizza!</p>
-  </section>
-  <nav>
-    <lo>
-      <button class="btn btn-primary" id="logo">login</a></button>
-      <button class="btn btn-primary" id="register">Register</a></button>
-      <button class="btn btn-primary" id="about">About</button>
-      <button class="btn btn-primary" id='terms'>Terms</a></button>
-    </lo>
-  </nav>
-</section>
-  <div class="container-2">
-  <p>By clicking <b>register</b>, you agree to the terms and conditions set by Rongo University depertment of ICT and the board of management.</p>
+  <meta charset="utf-8" />
+  <title>Firebase | Rongo-Uni</title>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome 5.15.1 CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  
+  <body>
+  <div id="app">
+    <img
+      src="https://i.imgur.com/wyMt35B.jpeg">
+     
   </div>
-  <section id="guestbook-container"></section>
-<div class="team">
-<h4>Developers 🦋</h4>
-<div class="table">
-  <b><table><tr>
-    <th>Royce Ξ Bob</th></tr>
-    <tr><td><a href="https://github.com/royce-bob"><img src="https://i.imgur.com/jC27gIL.jpeg" width="180"></td>
-    </tr></table></b>
+   <section id="event-details-container">
+      <h1>Rongo University</h1>
+      <p><i class="material-icons">calendar_today</i> Event date - October 30</p>
+      <p><i class="material-icons">location_city</i> Location - Migori County</p>
+      
+      <button class="btn btn-primary" id="startRsvp">RSVP</button><br> <p id="rsvp"></p><h5>Words are the fossils of civilization, while language is the bridge of communication</h5>
+        <a href="https://wa.me/254718241545?text=@STACBLITZ-ARCTIX-AI"><button class="btn btn-primary" id="contribute"  style='text-decoration: none;'>Press To Contribubte</button></a><br>
+    </section>
+  
+    <hr />
+  
+    <section id="firebaseui-auth-container">
+  
+    <section id="description-container">
+      <h2>What we'll be doing</h2>
+      <p>Join us for a day full of Firebase Workshops and Pizza!</p>
+    </section>
+    <nav>
+      <lo>
+        <button class="btn btn-primary" id="logo">login</a></button>
+        <button class="btn btn-primary" id="register">Register</a></button>
+        <button class="btn btn-primary" id="about">About</button>
+        <button class="btn btn-primary" id='terms'>Terms</a></button>
+      </lo>
+    </nav>
+  </section>
+    <div class="container-2">
+    <p>By clicking <b>register</b>, you agree to the terms and conditions set by Rongo University depertment of ICT and the board of management.</p>
+    </div>
+    <section id="guestbook-container"></section>
+  <div class="team">
+  <h4>Developers 🦋</h4>
+  <div class="table">
     <b><table><tr>
-    <th>Krakinz Ξ Kon </th></tr>
-    <tr><td><a href="https://github.com/krakinz"><img src="https://telegra.ph/file/765fec2d8142b2d2e360a.jpg" width="180"></td>
-    </tr></table></b>
+      <th>Royce Ξ Bob</th></tr>
+      <tr><td><a href="https://github.com/royce-bob"><img src="https://i.imgur.com/jC27gIL.jpeg" width="180"></td>
+      </tr></table></b>
+      <b><table><tr>
+      <th>Krakinz Ξ Kon </th></tr>
+      <tr><td><a href="https://github.com/krakinz"><img src="https://telegra.ph/file/765fec2d8142b2d2e360a.jpg" width="180"></td>
+      </tr></table></b>
+    </div>
   </div>
-</div>
-
-
-<div class="contact">
-<h4>Contact Us</h4>
-<div class="subscribe-container">
-<form method="POST">
-  <input type="email" name="youremail" placeholder="Email Address" required>
-  <input type="text" name="yourname" placeholder="Your full Name" required>
-  <input type="text" name="message" placeholder="Type your message here" required>
-  <input class="subscribe-button" type="submit" value="Submit">
-</form>
-</div>
-
-</div>
-<div class="wrapper">
-<a href="https://facebook.com/royceplusbob" class="icon facebook">
-<div class="tooltip">Facebook</div>
-<span><i class="fab fa-facebook-f"></i></span>
-</a>
-<a href="https://twitter.com/royce__bob" class="icon twitter">
-<div class="tooltip">Twitter</div>
-<span><i class="fab fa-twitter"></i></span>
-</a>
-<a href="https://instagram.com/royce__bob" class="icon instagram">
-<div class="tooltip">Instagram</div>
-<span><i class="fab fa-instagram"></i></span>
-</a>
-<a href="https://github.com/royce-b" class="icon github">
-<div class="tooltip">Github</div>
-<span><i class="fab fa-github"></i></span>
-</a>
-<a href="https://youtube.com/channel/UCBsVizIDS4GCz90DQvkjNxA" class="icon youtube">
-<div class="tooltip">Youtube</div>
-<span><i class="fab fa-youtube"></i></span>
-</a>
-</div>
-  <div class="footer"><p>copyright C2022 Inc Rongo-Uni</p></div>
-</div>
-</body>
+  
+  
+  <div class="contact">
+  <h4>Contact Us</h4>
+  <div class="subscribe-container">
+  <form method="POST">
+    <input type="email" name="youremail" placeholder="Email Address" required>
+    <input type="text" name="yourname" placeholder="Your full Name" required>
+    <input type="text" name="message" placeholder="Type your message here" required>
+    <input class="subscribe-button" type="submit" value="Submit">
+  </form>
+  </div>
+  
+  </div>
+  <div class="wrapper">
+  <a href="https://facebook.com/royceplusbob" class="icon facebook">
+  <div class="tooltip">Facebook</div>
+  <span><i class="fab fa-facebook-f"></i></span>
+  </a>
+  <a href="https://twitter.com/royce__bob" class="icon twitter">
+  <div class="tooltip">Twitter</div>
+  <span><i class="fab fa-twitter"></i></span>
+  </a>
+  <a href="https://instagram.com/royce__bob" class="icon instagram">
+  <div class="tooltip">Instagram</div>
+  <span><i class="fab fa-instagram"></i></span>
+  </a>
+  <a href="https://github.com/royce-b" class="icon github">
+  <div class="tooltip">Github</div>
+  <span><i class="fab fa-github"></i></span>
+  </a>
+  <a href="https://youtube.com/channel/UCBsVizIDS4GCz90DQvkjNxA" class="icon youtube">
+  <div class="tooltip">Youtube</div>
+  <span><i class="fab fa-youtube"></i></span>
+  </a>
+  </div>
+    <div class="footer"><p>copyright C2022 Inc Rongo-Uni</p></div>
+  </div>
+  </body>
