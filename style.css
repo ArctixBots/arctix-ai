@@ -54,10 +54,14 @@ section {
 .material-icons {
   padding-right: 10px;
 }
-
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  background-image:  url(https://i.imgur.com/2iPwRc8.jpeg);
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;
+  color: #FFFFFF;
 }
 
 h1, h2, h3, p {
