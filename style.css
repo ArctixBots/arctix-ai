@@ -213,6 +213,7 @@ text-align: center;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   color: #333;
   text-decoration: none;
+  justify-content: space-around;
 }
 .wrapper .tooltip {
   position: absolute;
