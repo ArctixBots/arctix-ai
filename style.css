@@ -206,17 +206,27 @@ text-align: center;
 .def p{
   padding-left: 2rem;
   text-transform: none;
+  padding-bottom: 2rem;
 }
-
 .def .flex-box{
-  font-style: italic;
   float: inline-start;
-  border-style: solid;
-  border-color:aqua; 
+  justify-content: space-around;
+  
 }
+.def .flex-box .begin{
+  font-style: italic; 
+}
+.def .flex-box .final{
+font-variant: normal;
+}
+.main h4{
+  padding-top: 2rem;
+  text-align: center;
 
-
-
+}
+.main p{
+  padding: 2rem;
+}
 
 
 
